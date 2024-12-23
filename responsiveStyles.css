@@ -1,0 +1,28 @@
+@media only screen and (max-width: 830px){
+    #navigationBar div{
+        margin-left: 0.9rem !important;
+        margin-right: 0.2rem !important;
+    }
+
+    #carouselTitle{
+        font-size: 2.9rem !important;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 770px){
+    #hamburgerBtn{
+        display: flex;
+        margin-right: 1rem !important;
+    }
+
+    #navList{
+        display: none !important;
+    }
+    #carouselTitle{
+        font-size: 2rem !important;
+    }
+}
