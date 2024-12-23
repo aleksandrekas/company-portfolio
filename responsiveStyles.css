@@ -25,4 +25,9 @@
     #carouselTitle{
         font-size: 2rem !important;
     }
+    #carouselBtn{
+        width: 100px;
+        height: 25px;
+        font-size: 0.7rem !important;
+    }
 }
