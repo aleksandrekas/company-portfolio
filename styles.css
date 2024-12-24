@@ -91,6 +91,12 @@
     z-index: 9 ;
 }
 
+#sideBtn button {
+    width: 85px;
+    height: 155px;
+}
+
+
 #sideBtn button ion-icon{
     color: rgba(180, 170, 170, 0.4);
     font-size: 50px;

@@ -30,4 +30,17 @@
         height: 25px;
         font-size: 0.7rem !important;
     }
+
+    #sideBtn button {
+        width: 55px;
+        height: 105px;
+    }
+    
+    
+    #sideBtn button ion-icon{
+        color: rgba(180, 170, 170, 0.4);
+        font-size: 40px;
+        margin: 0;
+    }
+
 }
