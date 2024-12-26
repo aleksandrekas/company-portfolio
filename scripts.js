@@ -9,7 +9,7 @@ window.addEventListener('scroll',()=>{
 
 const leftBtn = document.getElementById("left")
 const rightBtn = document.getElementById("right")
-const sliders = document.querySelectorAll("#carousel")
+const sliders = document.querySelectorAll(".carouselItem")
 let index =  0
 
 
