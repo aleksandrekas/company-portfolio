@@ -10,11 +10,24 @@ window.addEventListener('scroll',()=>{
 const leftBtn = document.getElementById("left")
 const rightBtn = document.getElementById("right")
 const sliders = document.querySelectorAll(".carouselItem")
+const botBtns = document.querySelectorAll(".botBtn")
 let index =  0
 
+function updateBotBtn(index) {
+
+    botBtns.forEach((btn, i) => {
+        btn.classList.remove('botBtnActive')
+        if(i === index){
+            btn.classList.add('botBtnActive')
+        }
+    });
+
+}
 
 if (sliders.length > 0) {
     sliders[index].classList.add('carouselActive');
+    updateBotBtn(index)
+    
 }
 
 
@@ -23,16 +36,22 @@ function changeCarousel(index) {
         slide.classList.remove('carouselActive');
         slide.classList.add('disabled');
         if (i === index) {
-            
             slide.classList.remove('disabled');
             slide.classList.add('carouselActive');
         }
+        updateBotBtn(index)
     });
+
+
 }
 
 
 
 console.log(index)
+
+
+
+
 
 
 
@@ -53,3 +72,10 @@ leftBtn.addEventListener('click', () => {
     }
     changeCarousel(index);
 });
+
+
+
+
+
+
+
