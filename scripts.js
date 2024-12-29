@@ -31,6 +31,8 @@ if (sliders.length > 0) {
 }
 
 
+
+
 function changeCarousel(index) {
     sliders.forEach((slide, i) => {
         slide.classList.remove('carouselActive');
@@ -44,14 +46,6 @@ function changeCarousel(index) {
 
 
 }
-
-
-
-console.log(index)
-
-
-
-
 
 
 
@@ -73,7 +67,12 @@ leftBtn.addEventListener('click', () => {
     changeCarousel(index);
 });
 
-
+botBtns.forEach((btn,indx)=>{
+    btn.addEventListener('click',()=>{
+        index = indx
+        changeCarousel(index)
+    })
+})
 
 
 
