@@ -5,6 +5,7 @@
 }
 
 body{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,13 +15,14 @@ body{
 
 .carouselContainer{
     position: relative;
+    width: 100%;
 }
 
 
 .carouselItem{
     display: none;
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     z-index: 1;
     background-size: cover;
@@ -39,7 +41,7 @@ body{
 
 
 #header {
-    max-width: 100% ;
+    max-width: 100%;
     width: 100% !important; 
     height: 72px;
     position: fixed;
@@ -105,7 +107,7 @@ body{
 .scrolled{
     background: rgba(0,0,0,0.8);
     height: 72px;
-    padding-bottom: 5rem;
+    padding-bottom: 6rem ;
     padding-top: 0.5rem;
 }
 
@@ -174,16 +176,118 @@ body{
 }
 
 
+.containerDef{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+
+}
+
+
+#aboutUs{
+    width: 100% ;
+    background-color: #F2F2F2;
+    padding-top:3rem;
+}
+
+
+.dottedLine{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.lines{
+    width: 10px;
+    height: 4px;
+    background: black;
+    margin: 20px 1px;
+}
 
 
 
 
 
+.sectionHeader{
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+
+.p-def{
+    color: #656565;
+    text-align: center;
+}
+
+.header-p{
+    max-width: 100%;
+}
+
+
+
+.greenBtn{
+    background-color: #198754;
+    color: white;
+    height: 31px;
+    max-width: 100px;
+    width: 100%;
+    border: none;
+}
+
+.greenBtn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.midContent{
+    max-width: 1050px;
+    display: flex;
+    margin: 5px;
+}
+
+.textMidContent{
+    padding-top: 2rem;
+    margin-left: 1rem;
+}
+
+.textMidContent h1{
+    color: #198754;
+    cursor: pointer;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.textMidContent h1:hover{
+    color: black;
+}
+
+
+.midContent img{
+    max-width: 540px;
+    width: 100%;
+}
+
+.midContent p{
+    color: #656565;
+    font-size: 1.1rem;
+}
 
 
 
 
 
+/* dynamic styles */
 
 
 .carouselActive{

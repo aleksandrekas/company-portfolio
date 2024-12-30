@@ -13,7 +13,7 @@
 
 
 
-@media only screen and (max-width: 770px){
+@media only screen and (max-width: 760px){
     #hamburgerBtn{
         display: flex;
         margin-right: 1rem !important;
@@ -41,6 +41,16 @@
         color: rgba(180, 170, 170, 0.4);
         font-size: 40px;
         margin: 0;
+    }
+
+    .midContent{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .textMidContent{
+        max-width: 500px;
     }
 
 }
