@@ -251,7 +251,7 @@ body{
 .midContent{
     max-width: 1050px;
     display: flex;
-    margin: 5px;
+    margin: 25px;
 }
 
 .textMidContent{
