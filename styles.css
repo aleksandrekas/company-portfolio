@@ -189,7 +189,7 @@ body{
 #aboutUs{
     width: 100% ;
     background-color: #F2F2F2;
-    padding-top:3rem;
+    padding:3rem 0;
 }
 
 
@@ -229,6 +229,7 @@ body{
 
 .header-p{
     max-width: 100%;
+    font-size: 1.1rem;
 }
 
 
@@ -276,13 +277,98 @@ body{
 .midContent img{
     max-width: 540px;
     width: 100%;
+
 }
 
 .midContent p{
-    color: #656565;
+    color:#8f8e8e;
     font-size: 1.1rem;
 }
 
+.bottomContent{
+    max-width: 1050px !important;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomItem{
+    position: relative;
+    max-width: 330px;
+    /* height: 400px; */
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* padding-top: 160px; */
+}
+
+.bottomItem img{
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.bottomItem h5{
+    font-size: 20px;
+    margin: 2rem;
+}
+
+
+.bottomItem p{
+    color: #8f8e8e;
+    margin: 0 2rem 1rem 2rem;
+}
+
+.bottomItem button{
+    margin-bottom: 1.5rem;
+}
+
+
+.bottomItem:hover button{
+    background: black;
+    transition: 0.8s;
+}
+
+.bottomItem:hover .itemIcon{
+    background: white;
+}
+.bottomItem:hover .itemIcon ion-icon{
+    color: #198754;
+    transition: 0.8s;
+}
+
+
+
+.itemIcon{
+    position: absolute;
+    bottom: -32px;
+    left: 45%;
+    width: 64px;
+    height: 64px;
+    background-color:#198754;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+    z-index: 1;
+}
+
+.itemIcon ion-icon{
+    font-size: 2rem;
+    color: white;
+}
+
+.imgContainer{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+}
 
 
 

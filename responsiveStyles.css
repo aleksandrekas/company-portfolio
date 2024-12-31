@@ -23,6 +23,16 @@
     .textMidContent{
         max-width: 500px;
     }
+
+    .bottomContent{
+        flex-direction: column;
+    }
+    .bottomItem{
+        max-width: 540px;
+    }
+    .imgContainer{
+        height: 308px !important;
+    }
 }
 
 
