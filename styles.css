@@ -332,14 +332,13 @@ body{
 
 .bottomItem:hover button{
     background: black;
-    transition: 0.8s;
 }
 
 .bottomItem:hover .itemIcon{
-    background: white;
+    background: black;
 }
 .bottomItem:hover .itemIcon ion-icon{
-    color: #198754;
+    color: white;
     transition: 0.8s;
 }
 
