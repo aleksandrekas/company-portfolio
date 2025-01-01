@@ -29,6 +29,7 @@
     }
     .bottomItem{
         max-width: 540px;
+        margin: 25px;
     }
     .imgContainer{
         height: 308px !important;

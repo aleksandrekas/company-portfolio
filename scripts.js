@@ -11,6 +11,8 @@ const leftBtn = document.getElementById("left")
 const rightBtn = document.getElementById("right")
 const sliders = document.querySelectorAll(".carouselItem")
 const botBtns = document.querySelectorAll(".botBtn")
+const img = document.querySelectorAll(".bottomItemContentImg")
+const containers = document.querySelectorAll('.imgContainer')
 let index =  0
 
 function updateBotBtn(index) {
@@ -76,5 +78,15 @@ botBtns.forEach((btn,indx)=>{
 
 
 
+function updateHeights() {
+    containers.forEach((cont, index) => {
+        cont.style.height = `${img[index].offsetHeight}px`;
+    });
+}
 
-
+img.forEach(image => {
+    const observer = new ResizeObserver(() => {
+        updateHeights();
+    });
+    observer.observe(image);
+});
