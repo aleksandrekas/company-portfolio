@@ -416,6 +416,38 @@ body{
     font-weight: 200;
 }
 
+/* actionnn----------- */
+
+#action{
+    width: 100%;
+    background-color: #1DBF73;
+    color: white;
+    padding: 2rem;
+}
+
+#green .lines{
+    background-color: white;
+}
+
+#action p{
+    color: white;
+    width: 100%;
+}
+
+#action button{
+    background-color: white;
+    color: #1DBF73;
+    width: 200px;
+    height: 40px;
+    border: none;
+    transition: 0.3s;
+}
+
+#action button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
 
 
 
