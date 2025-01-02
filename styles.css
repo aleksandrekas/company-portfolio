@@ -373,6 +373,49 @@ body{
     /* overflow: hidden; */
 }
 
+/* services */
+
+#services{
+    background: white;
+    padding: 4rem;
+}
+
+.serviceList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.serviceItem{
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceItem h4{
+    font-size: 1rem;
+    margin: 0.7rem;
+
+}
+
+.serviceItem p{
+    text-align: center;
+    font-size: 1.1rem;
+    color: rgb(139, 139, 139);
+    margin: 0.7rem;
+}
+
+.serviceItem ion-icon{
+    color: #198754;
+    font-size: 4rem;
+    font-weight: 200;
+}
+
 
 
 
