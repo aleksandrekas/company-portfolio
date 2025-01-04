@@ -451,6 +451,136 @@ body{
 
 
 
+/* pricings styles */
+#pricing{
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.dealContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.dealItem{
+    max-width: 380px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    margin: 2rem 1rem;
+}
+
+.dealItem h1{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.dealItem h2{
+    font-size: 48px;
+}
+
+.dealItem h2 span{
+    font-size: 24px;
+}
+
+.dealItem p{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.itemHeader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #353535;
+    color: white;
+    padding: 1.4rem;
+}
+
+.dealItem ul{
+    list-style: none;
+    margin: 2rem 0.5rem;
+    color: #656565;
+    width: 100%;
+}
+
+
+.specialT{
+    font-weight: 500;
+}
+
+.dealItem ul .g-icon{
+    color: #1DBF73;
+}
+.dealItem ul .n-icon{
+    color: red;
+}
+
+.dealItem ul li{
+    font-size: 17px;
+    margin: 0.7rem 0;
+}
+
+
+.dealItem button{
+    font-size: 1rem;
+    width: 140px;
+    height: 44px;
+    border: none;
+    background-color: #353535;
+    color: white;
+}
+
+.dealItem button:hover{
+    background-color: #1DBF73;
+}
+
+
+
+.dealItem ul li ion-icon{
+    margin-right: 0.2rem;
+}
+
+
+
+#middle .itemHeader{
+    background-color: #1DBF73;
+}
+
+#middle button{
+    background-color: #1DBF73;
+}
+
+
+#middle button:hover{
+    background-color: #353535;
+}
+
+#middle{
+    transform: translateY(-50px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* dynamic styles */
 
 
