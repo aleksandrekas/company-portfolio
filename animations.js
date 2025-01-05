@@ -15,3 +15,13 @@ const observer = new IntersectionObserver(([entry]) => {
 
   observer.observe(skillSection)
 
+
+  function displayValue(targetValue,targetDiv){
+    let currentvalue = 0
+    const displayDiv = document.getElementById(targetDiv)
+    if(currentvalue < targetValue){
+      currentvalue ++
+      displayDiv.innerText = currentvalue
+
+    }
+  }
