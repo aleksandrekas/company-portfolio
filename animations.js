@@ -1,27 +1,65 @@
 const skillSection = document.querySelector(".diagrams")
+const numbersSection = document.querySelector(".numbers")
 
 
 
-const observer = new IntersectionObserver(([entry]) => {
+
+
+function displayValue(targetValue, targetDiv,time) {
+  let currentValue = 0;
+  const displayDiv = document.getElementById(targetDiv);
+
+  const interval = setInterval(() => {
+    if (currentValue < targetValue) {
+      currentValue++;
+      displayDiv.innerText = currentValue; 
+    } else {
+      clearInterval(interval);
+    }
+  }, time);
+}
+
+
+
+const skillsObserver = new IntersectionObserver(([entry],observer) => {
     if (entry.isIntersecting) {
       document.getElementById("hBar").style.animation ="growGreen linear 1s forwards"
       document.getElementById("cBar").style.animation ="growBlue linear 1s forwards"
       document.getElementById("jBar").style.animation ="growYellow linear 1s forwards"
       document.getElementById("pBar").style.animation ="growRed linear 1s forwards"
-      observer.unobserve(skillSection);
+
+      observer.unobserve(entry.target);
     }
   });
+  const amountObserver = new IntersectionObserver(
+    ([entry], observer) => {
+      if (entry.isIntersecting) {
+        displayValue(100, "staffAmount", 15);
+        displayValue(200, "clientsAmount", 8); 
+        displayValue(300, "projectAmount", 5);
+        displayValue(400, "runingAmount", 4); 
+  
+        observer.unobserve(entry.target);
+      }
+    },
+   
+  );
 
 
-  observer.observe(skillSection)
 
 
-  function displayValue(targetValue,targetDiv){
-    let currentvalue = 0
-    const displayDiv = document.getElementById(targetDiv)
-    if(currentvalue < targetValue){
-      currentvalue ++
-      displayDiv.innerText = currentvalue
 
-    }
-  }
+
+
+  amountObserver.observe(numbersSection)
+
+  skillsObserver.observe(skillSection)
+
+
+
+
+
+
+
+
+

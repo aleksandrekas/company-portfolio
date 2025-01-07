@@ -573,6 +573,7 @@ body{
 
 #skills{
     background-color: white;
+    max-width: 100%;
     width: 100%;
     padding: 2rem 3rem;
 }
@@ -645,7 +646,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 10px;
 }
+
+
+
+
 
 .numbers h1{
     color: #1DBF73;

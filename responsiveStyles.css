@@ -34,6 +34,12 @@
     .imgContainer{
         height: 308px !important;
     }
+
+    .numbers{
+        max-width: 600px;
+        display: grid;
+        grid-template: 1fr 1fr /1fr 1fr;
+    }
 }
 
 
@@ -105,4 +111,21 @@
         align-items: center;
         padding: 15px;
     }
+}
+
+
+
+@media only screen and (max-width: 450px){
+    .numbers{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .numbers div{
+        margin: 1rem 0;
+    }
+
+
+
 }
