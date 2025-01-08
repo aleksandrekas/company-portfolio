@@ -665,28 +665,40 @@ body{
 
 /* foooter-------------- */
 #footer{
+    display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 100%;
     background-color:#1DBF73 ;
     color: white;
+    padding: 3rem;
 }
 
-#footer div{
+.footerChild{
     width: 280px;
+    height: 239px;
+    margin: 0 0.6rem;
 }
+
 
 #logos{
     display: flex;
+    margin-top: 1rem;
 }
 
 #fLine{
     justify-content: flex-start;
+    width: 110px !important ;
+    height: 5px !important;
+    margin-bottom: 0.5rem;
+
 }
 
 
 #fLine .lines{
     background-color: white;
     width: 10px;
+    height: 5px;
     margin: 0 1px;
 }
 
@@ -699,12 +711,13 @@ body{
 }
 
 #footer p {
-    margin: 0;
+    margin:0.1rem 0;
 }
 
 form{
     display: flex;
     justify-content: flex-start;
+    margin-top: 0.5rem;
 }
 
 form button{
@@ -742,21 +755,46 @@ form input{
     color: white;
 }
 
-#footer ul{
+.footerChild span{
+    font-weight: 900;
+}
+
+.footerUl{
+    padding: 0;
     list-style: none;
-    width: 100%;
 }
-#footer ul li{
-    width: 100%;
+
+.footerUl li{
     border-bottom: 1px solid white;
+    height: 30px;
+    margin: 0.2rem 0;
 }
 
-#fAbout a{
-    color: white;
+.footerUl li ion-icon{
+    font-size: 10px;
+    margin-right: 4px;
+}
+
+
+.footerUl li a{
     text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-weight: 300;
+}
+
+.footerUl li a:hover{
+    color: black;
+}
+
+#fAbout{
+    padding: 0 1.5rem;
 }
 
 
+#fSubscribe{
+    padding-left: 22px;
+}
 
 
 /* dynamic styles */

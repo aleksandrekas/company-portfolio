@@ -1,3 +1,14 @@
+@media only screen and (max-width: 1050px){
+    #footer{
+        display: grid;
+        grid-template: 1fr 1fr/1fr 1fr;
+    }
+}
+
+
+
+
+
 @media only screen and (max-width: 965px){
     .midContent img{
         max-width: 50%;
@@ -113,7 +124,24 @@
     }
 }
 
+@media only screen and (max-width: 650px){
+    #footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
+    #fAbout{
+        padding: 0;
+    }
+
+    #fSubscribe{
+        padding: 0;
+    }
+
+    
+}
 
 @media only screen and (max-width: 450px){
     .numbers{
