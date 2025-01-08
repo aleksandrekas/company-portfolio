@@ -816,7 +816,44 @@ form input{
 }
 
 
+/* -----------contact us-------------------- */
+#contact{
+    width: 100%;
+    padding: 2rem;
+}
 
+.middleContent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.midCchild{
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+.midCchild ion-icon{
+    font-size: 40px;
+    color: #1DBF73;
+    margin: 1rem 0;
+}
+
+.midCchild h3{
+    font-size: 1rem;
+}
+
+.midCchild p{
+    color: #656565;
+}
 
 
 
