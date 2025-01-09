@@ -1,4 +1,8 @@
 @media only screen and (max-width: 1050px){
+    #header{
+        max-width: 1050px !important;
+        width: 100%;
+    }
     #footer{
         display: grid;
         grid-template: 1fr 1fr/1fr 1fr;
@@ -10,6 +14,10 @@
 
 
 @media only screen and (max-width: 965px){
+    #header{
+        max-width: 965px !important;
+        width: 100%;
+    }
     .midContent img{
         max-width: 50%;
         width: 100%;
@@ -22,6 +30,10 @@
 }
 
 @media only screen and (max-width: 920px){
+    #header{
+        max-width: 920px !important;
+        width: 100%;
+    }
     .midContent{
         flex-direction: column;
         justify-content: flex-start;
@@ -94,6 +106,11 @@
 
 
 @media only screen and (max-width: 860px){
+
+    #header{
+        max-width: 860px !important;
+        width: 100%;
+    }
     .middleContent{
         width: 100%;
         background-color: white;
@@ -123,6 +140,10 @@
 
 
 @media only screen and (max-width: 760px){
+    #header{
+        max-width: 760px !important;
+        width: 100%;
+    }
     #hamburgerBtn{
         display: flex;
         margin-right: 1rem !important;
@@ -187,6 +208,10 @@
     #fSubscribe{
         padding: 0;
     }
+    #header{
+        max-width: 650px !important;
+        width: 100%;
+    }
 
     
 }
@@ -196,6 +221,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+    }
+    #header{
+        max-width: 450px !important;
+        width: 100%;
     }
 
     .numbers div{
