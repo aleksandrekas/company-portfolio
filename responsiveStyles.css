@@ -51,8 +51,56 @@
         display: grid;
         grid-template: 1fr 1fr /1fr 1fr;
     }
+
+    .middleContent{
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+
+    }
+
+
+    .about{
+        max-width: 900px;
+        width: 100%;
+    }
+
+    .firstLine{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about input{
+        max-width: 900px;
+        width: 100% !important;
+    }
+    .map{
+        max-width: 900px;
+        width: 100%;
+    }
+    iframe{
+        max-width: 900px;
+        width: 100%;
+    }
+
+    .firstLine :nth-last-child(1){
+        margin-left: 0px;
+    }
+    
+    textarea{
+        max-width: 900px;
+    }
 }
 
+
+@media only screen and (max-width: 860px){
+    .middleContent{
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+
+    }
+}
 
 
 @media only screen and (max-width: 830px){
