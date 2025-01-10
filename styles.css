@@ -946,7 +946,151 @@ iframe{
     margin-right: 1rem !important;
 }
 
+/* ------------portfolio------------- */
+#portfolio{
+    width: 100%;
+    padding: 2rem;
+}
 
+.portfolioBtns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.portfolioBtns button{
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px 20px;
+    color: white;
+    background-color: #353535;
+    border: none;
+    margin-bottom: 0.2rem;
+}
+
+.portfolioBtns button:hover{
+    background-color: #1DBF73;
+}
+
+
+
+
+.portfolioBtnActive{
+    background-color: #1DBF73 !important;
+}
+
+.portfolioItems{
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.prtfItem{
+    position: relative;
+    max-width: 350px;
+    width: 100%;
+    height: 233px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin:  10px;
+}
+
+.prtfItem h3{
+    font-size: 18px;
+    z-index: 2;
+}
+.prtfItem h4{
+    font-size: 13px;
+    font-weight: 300;
+    z-index: 2;
+}
+
+.frame{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+
+.prtfItem img{
+    max-width: 380px;
+    width: 100%;
+    max-height: 233px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+.hoverItems{
+    display: flex !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0;
+    z-index: 0;
+    transition: 0.4s;
+}
+
+.hoverItems button{
+    background-color: #1DBF73;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70px;
+    border: none;
+    width: 60px;
+    height: 35px;
+    font-size: 1.5rem;
+    margin-right:10px ;
+}
+
+.hoverItems a{
+    background-color: #1DBF73;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70px;
+    border: none;
+    width: 55px;
+    height: 35px;
+    font-size: 1.5rem;
+}
+
+.prtfItem:hover .hoverItems{
+    opacity: 1;
+    z-index: 4;
+}
+
+
+
+.prtfItemHide {
+    display: none;
+}
+
+
+/* ------------key frames-------------------- */
 
 @keyframes growGreen {
     0%{

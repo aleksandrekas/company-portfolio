@@ -1,7 +1,7 @@
 const skillSection = document.querySelector(".diagrams")
 const numbersSection = document.querySelector(".numbers")
-
-
+const buttons = document.querySelectorAll('.portfolioBtn')
+const prtfItem = document.querySelectorAll('.prtfItem')
 
 
 
@@ -47,6 +47,60 @@ const skillsObserver = new IntersectionObserver(([entry],observer) => {
 
 
 
+  function portfolioBtnClick(btn) {
+    buttons.forEach(element => {
+        if (element.classList.contains('portfolioBtnActive')) {
+            element.classList.remove('portfolioBtnActive');
+        }
+    });
+
+    btn.classList.add('portfolioBtnActive');
+    console.log(btn.textContent);
+
+
+
+    // upper code takes care of showing whitch button is clicked
+
+    if (btn.textContent === 'ALL') {
+        prtfItem.forEach(item => {
+            if (item.classList.contains('prtfItemHide')) {
+                item.classList.remove('prtfItemHide');
+            }
+        });
+    } else {
+        prtfItem.forEach(item => {
+            const itemT = item.querySelector('h4');
+            if (itemT.textContent !== btn.textContent) {
+                item.classList.add('prtfItemHide');
+            } else {
+                item.classList.remove('prtfItemHide'); 
+            }
+        });
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  buttons.forEach(element => {
+    element.addEventListener('click', () => portfolioBtnClick(element));
+  });
 
 
 
