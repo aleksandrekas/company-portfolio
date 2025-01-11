@@ -2,7 +2,7 @@ const skillSection = document.querySelector(".diagrams")
 const numbersSection = document.querySelector(".numbers")
 const buttons = document.querySelectorAll('.portfolioBtn')
 const prtfItem = document.querySelectorAll('.prtfItem')
-
+const prtfImg = document.querySelectorAll(".prtfImg")
 
 
 function displayValue(targetValue, targetDiv,time) {
@@ -93,7 +93,18 @@ function displayValue(targetValue, targetDiv,time) {
 
 
 
+  function updateHeights() {
+    prtfItem.forEach((cont, index) => {
+        cont.style.height = `${prtfImg[index].offsetHeight}px`;
+    });
+  }
 
+prtfImg.forEach(image => {
+    const observer = new ResizeObserver(() => {
+        updateHeights();
+    });
+    observer.observe(image);
+});
 
 
 

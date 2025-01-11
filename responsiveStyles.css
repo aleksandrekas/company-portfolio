@@ -238,7 +238,15 @@
     .numbers div{
         margin: 1rem 0;
     }
+    
 
+
+}
+@media only screen and (max-width: 375px){
+
+    .prtfItem{
+        
+    }
 
 
 }

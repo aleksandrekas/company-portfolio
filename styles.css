@@ -1002,7 +1002,6 @@ iframe{
     flex-direction: column;
     color: white;
     margin:  10px;
-    transition: 1s;
 }
 
 .prtfItem h3{
