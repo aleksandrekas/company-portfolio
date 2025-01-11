@@ -21,7 +21,7 @@ function displayValue(targetValue, targetDiv,time) {
 
 
 
-const skillsObserver = new IntersectionObserver(([entry],observer) => {
+  const skillsObserver = new IntersectionObserver(([entry],observer) => {
     if (entry.isIntersecting) {
       document.getElementById("hBar").style.animation ="growGreen linear 1s forwards"
       document.getElementById("cBar").style.animation ="growBlue linear 1s forwards"
@@ -77,7 +77,15 @@ const skillsObserver = new IntersectionObserver(([entry],observer) => {
             }
         });
     }
-}
+
+    prtfItem.forEach(item =>{
+      if(item.classList.contains('prtfItemHide')){
+        item.style.display = 'none'
+      }else{
+        item.style.display = 'flex'
+      }
+    })
+  }
 
 
 
