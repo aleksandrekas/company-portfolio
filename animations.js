@@ -48,6 +48,7 @@ function displayValue(targetValue, targetDiv,time) {
 
 
   function portfolioBtnClick(btn) {
+
     buttons.forEach(element => {
         if (element.classList.contains('portfolioBtnActive')) {
             element.classList.remove('portfolioBtnActive');
@@ -57,14 +58,11 @@ function displayValue(targetValue, targetDiv,time) {
     btn.classList.add('portfolioBtnActive');
     console.log(btn.textContent);
 
-
-
-    // upper code takes care of showing whitch button is clicked
-
     if (btn.textContent === 'ALL') {
         prtfItem.forEach(item => {
             if (item.classList.contains('prtfItemHide')) {
                 item.classList.remove('prtfItemHide');
+                item.classList.remove('hidden'); 
             }
         });
     } else {
@@ -73,19 +71,24 @@ function displayValue(targetValue, targetDiv,time) {
             if (itemT.textContent !== btn.textContent) {
                 item.classList.add('prtfItemHide');
             } else {
-                item.classList.remove('prtfItemHide'); 
+                item.classList.remove('prtfItemHide');
+                item.classList.remove('hidden');
             }
         });
     }
+}
 
-    prtfItem.forEach(item =>{
-      if(item.classList.contains('prtfItemHide')){
-        item.style.display = 'none'
-      }else{
-        item.style.display = 'flex'
+
+prtfItem.forEach(item => {
+  item.addEventListener('transitionend', () => {
+      if (item.classList.contains('prtfItemHide')) {
+          setTimeout(() => {
+              item.classList.add('hidden'); 
+          }, 10); 
       }
-    })
-  }
+  });
+});
+
 
 
 

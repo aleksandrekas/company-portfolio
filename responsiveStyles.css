@@ -42,6 +42,33 @@
         max-width: 920px !important;
         width: 100%;
     }
+
+
+
+    #hamburgerBtn{
+        display: flex;
+        margin-right: 1rem !important;
+    }
+
+    #navList{
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 260px;
+        width: 100%;
+        flex-direction: column;
+        background: rgba(0,0,0,0.9);
+        margin: 0 !important;
+        height: 2000%;
+        z-index: 9;
+        padding: 1rem;
+    }
+
+    #navList li{
+        font-weight: 300 !important;
+        margin: 1rem 0;
+    }
+
     .midContent{
         flex-direction: column;
         justify-content: flex-start;
@@ -152,14 +179,7 @@
         max-width: 760px !important;
         width: 100%;
     }
-    #hamburgerBtn{
-        display: flex;
-        margin-right: 1rem !important;
-    }
 
-    #navList{
-        display: none !important;
-    }
     #carouselTitle{
         font-size: 2rem !important;
     }
@@ -239,14 +259,6 @@
         margin: 1rem 0;
     }
     
-
-
-}
-@media only screen and (max-width: 375px){
-
-    .prtfItem{
-        
-    }
 
 
 }
