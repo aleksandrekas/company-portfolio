@@ -7,10 +7,6 @@
 
 
 @media only screen and (max-width: 1050px){
-    #header{
-        max-width: 1050px !important;
-        width: 100%;
-    }
     #footer{
         display: grid;
         grid-template: 1fr 1fr/1fr 1fr;
@@ -22,10 +18,6 @@
 
 
 @media only screen and (max-width: 965px){
-    #header{
-        max-width: 965px !important;
-        width: 100%;
-    }
     .midContent img{
         max-width: 50%;
         width: 100%;
@@ -38,22 +30,17 @@
 }
 
 @media only screen and (max-width: 920px){
-    #header{
-        max-width: 920px !important;
-        width: 100%;
-    }
 
 
 
     #hamburgerBtn{
         display: flex;
-        margin-right: 1rem !important;
     }
 
     #navList{
         position: absolute;
         top: 0;
-        left: 0;
+        left: -260px;
         max-width: 260px;
         width: 100%;
         flex-direction: column;
@@ -62,6 +49,11 @@
         height: 2000%;
         z-index: 9;
         padding: 1rem;
+        transition: 0.5s;
+    }
+
+    #overlayDark{
+        z-index: 8;
     }
 
     #navList li{
@@ -142,10 +134,7 @@
 
 @media only screen and (max-width: 860px){
 
-    #header{
-        max-width: 860px !important;
-        width: 100%;
-    }
+
     .middleContent{
         width: 100%;
         background-color: white;
@@ -175,10 +164,7 @@
 
 
 @media only screen and (max-width: 760px){
-    #header{
-        max-width: 760px !important;
-        width: 100%;
-    }
+
 
     #carouselTitle{
         font-size: 2rem !important;
@@ -250,10 +236,7 @@
         flex-direction: column;
         justify-content: space-evenly;
     }
-    #header{
-        max-width: 450px !important;
-        width: 100%;
-    }
+
 
     .numbers div{
         margin: 1rem 0;

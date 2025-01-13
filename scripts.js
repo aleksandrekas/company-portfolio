@@ -6,7 +6,7 @@ window.addEventListener('scroll',()=>{
     }
 })
 
-
+const hamburgerBtn= document.getElementById("hamburgerBtn")
 const leftBtn = document.getElementById("left")
 const rightBtn = document.getElementById("right")
 const sliders = document.querySelectorAll(".carouselItem")
@@ -90,3 +90,21 @@ img.forEach(image => {
     });
     observer.observe(image);
 });
+
+
+
+
+hamburgerBtn.addEventListener('click',()=> {
+    document.getElementById('navList').style.transform ='translateX(260px)'
+    document.querySelector(".overlayDark").style.display = 'flex'
+    document.body.style.overflow = 'hidden'
+    hamburgerBtn.style.display ='none'
+})
+
+
+document.querySelector(".overlayDark").addEventListener('click',()=>{
+    document.getElementById('navList').style.transform ='translateX(-260px)'
+    document.querySelector(".overlayDark").style.display = 'none'
+    document.body.style.overflow = 'visible'
+    hamburgerBtn.style.display ='flex'
+})
